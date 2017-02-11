@@ -129,7 +129,7 @@ void    my_menus(void)
     exit_spoiler();
     new_spoiler("Rev1 Codes");
         new_spoiler("Kart Codes");
-            new_entry_with_note("Invincibility", inv_note, invincibilityRev1);
+            new_entry_with_note("Invincibility (Rev1)", inv_note, invincibilityRev1);
             new_entry_with_note("Black Kart", black_note, blackkartRev1);
             new_entry_with_note("Always Shocked", shock_note, shockedRev1);
             new_entry_with_note("Always Crushed (See Note)", crush_note, crushedRev1);

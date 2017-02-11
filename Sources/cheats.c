@@ -18,12 +18,21 @@ void	invincibilityRev0(void)
 
 void	invincibilityRev1(void)
 {
-	if (READU8(0x1478FDF4) == 1)
+	if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 	{
-		offset = READU32 (0x1400EB70);
-		offset = READU32 (0x518 + offset);
-		offset = READU32 (0x1C + offset);
-		WRITEU16(0x102C + offset, 0xFFFF);
+		if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+		{
+			offset = READU32 (0x1400EB70);
+		}
+		if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+		{
+			offset = READU32 (0x1400F178);
+		}
+		{
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU16(0x102C + offset, 0xFFFF);
+		}
 	}
 }
 
@@ -40,12 +49,21 @@ void	blackkartRev0(void)
 
 void	blackkartRev1(void)
 {
-	if (READU8(0x1478FDF4) == 1)
+	if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 	{
-		offset = READU32 (0x1400EB70);
+		if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+		{
+			offset = READU32 (0x1400EB70);
+		}
+		if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+		{
+			offset = READU32 (0x1400F178);
+		}
+		{
 		offset = READU32 (0x518 + offset);
 		offset = READU32 (0x1C + offset);
 		WRITEU16(0xFF8 + offset, 0xFFFF);
+		}
 	}
 }
 
@@ -62,12 +80,21 @@ void	shockedRev0(void)
 
 void	shockedRev1(void)
 {
-	if (READU8(0x1478FDF4) == 1)
+	if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 	{
-		offset = READU32 (0x1400EB70);
+		if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+		{
+			offset = READU32 (0x1400EB70);
+		}
+		if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+		{
+			offset = READU32 (0x1400F178);
+		}
+		{
 		offset = READU32 (0x518 + offset);
 		offset = READU32 (0x1C + offset);
 		WRITEU16(0x1000 + offset, 0xFFFF);
+		}
 	}
 }
 
@@ -84,33 +111,42 @@ void	crushedRev0(void)
 
 void	crushedRev1(void)
 {
-	if (READU8(0x1478FDF4) == 1)
+	if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 	{
-		offset = READU32 (0x1400EB70);
+		if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+		{
+			offset = READU32 (0x1400EB70);
+		}
+		if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+		{
+			offset = READU32 (0x1400F178);
+		}
+		{
 		offset = READU32 (0x518 + offset);
 		offset = READU32 (0x1C + offset);
 		WRITEU16(0x1004 + offset, 0xFFFF);
+		}
 	}
 }
 
 void	fastBlue(void)
 {
-WRITEU32(0x666094, 0x43000000);
+	WRITEU32(0x666094, 0x43000000);
 }
 
 void	stoppedBlue(void)
 {
-WRITEU32(0x666094, 0x00000000);
+	WRITEU32(0x666094, 0x00000000);
 }
 
 void	fastGreen(void)
 {
-WRITEU32(0x66619C, 0x43000000);
+	WRITEU32(0x66619C, 0x43000000);
 }
 
 void	stoppedGreen(void)
 {
-WRITEU32(0x66619C, 0x00000000);
+	WRITEU32(0x66619C, 0x00000000);
 }
 
 void	bulletSpeed(void)
@@ -138,74 +174,74 @@ void	itemwheelRev0(void)
 			if (is_pressed(BUTTON_X))
 			{
 			offset = READU32(0x17782494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000009);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x9);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_Y))
 			{
 			offset = READU32(0x17782494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x0000000D);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0xD);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_ST))
 			{
 			offset = READU32(0x17782494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000006);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x6);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_SE))
 			{
 			offset = READU32(0x17782494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x0000000A);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0xA);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DL))
 			{
 			offset = READU32(0x17782494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x0000000E);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0xE);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DR))
 			{
 			offset = READU32(0x17782494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000002);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x2);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DD))
 			{
 			offset = READU32(0x17782494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000004);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x4);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DU))
 			{
 			offset = READU32(0x17782494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000001);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x1);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 		}
 	}
@@ -213,81 +249,81 @@ void	itemwheelRev0(void)
 
 void	itemwheelRev1(void)
 {
-	if (READU8(0x1478FDF4) == 1)
+	if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 	{
 		if (READU32(0x177BE494) != 0)
 		{
 			if (is_pressed(BUTTON_X))
 			{
 			offset = READU32(0x177BE494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000009);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x9);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_Y))
 			{
 			offset = READU32(0x177BE494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x0000000D);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0xD);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_ST))
 			{
 			offset = READU32(0x177BE494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000006);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x6);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_SE))
 			{
 			offset = READU32(0x177BE494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x0000000A);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0xA);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DL))
 			{
 			offset = READU32(0x177BE494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x0000000E);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0xE);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DR))
 			{
 			offset = READU32(0x177BE494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000002);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x2);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DD))
 			{
 			offset = READU32(0x177BE494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000004);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x4);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DU))
 			{
 			offset = READU32(0x177BE494);
-			offset = READU32(0x000027AC + offset);
-			WRITEU32(0x0000003C + offset, 0xFFFFFFFF);
-			WRITEU32(0x000000A8 + offset, 0x00000203);
-			WRITEU32(0x000000C8 + offset, 0x00000001);
-			WRITEU32(0x000000D8 + offset, 0x3F800000);
+			offset = READU32(0x27AC + offset);
+			WRITEU32(0x3C + offset, 0xFFFFFFFF);
+			WRITEU32(0xA8 + offset, 0x203);
+			WRITEU32(0xC8 + offset, 0x1);
+			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 		}
 	}
@@ -299,9 +335,9 @@ void	waterlevelRev0(void)
 	{
 		if (is_pressed(ST + DR))
 		{
-			if (READU32(0x0065C528) != 0)
+			if (READU32(0x65C528) != 0)
 			{
-				offset = READU32(0x0065C528);    
+				offset = READU32(0x65C528);    
 				offset = READU32(offset - 0x9AF4);
 				ADDTOFLOAT(offset - 0xACCC, 0.1);
 				ADDTOFLOAT(0x16709A94, 0.1);
@@ -309,9 +345,9 @@ void	waterlevelRev0(void)
 		}
 		if (is_pressed(ST + DL))
 		{
-			if (READU32(0x0065C528) != 0)
+			if (READU32(0x65C528) != 0)
 			{
-				offset = READU32(0x0065C528);
+				offset = READU32(0x65C528);
 				offset = READU32(offset - 0x9AF4);
 				SUBTOFLOAT(offset - 0xACCC, 0.1);
 				SUBTOFLOAT(0x16709A94, 0.1);
@@ -322,13 +358,13 @@ void	waterlevelRev0(void)
 
 void	waterlevelRev1(void)
 {
-	if (READU8(0x1478FDF4) == 1)
+	if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 	{
 		if (is_pressed(ST + DR))
 		{
-			if (READU32(0x0065C528) != 0)
+			if (READU32(0x65C528) != 0)
 			{
-				offset = READU32(0x0065C528);    
+				offset = READU32(0x65C528);    
 				offset = READU32(offset - 0x9AF4);
 				ADDTOFLOAT(offset - 0xACCC, 0.1);
 				ADDTOFLOAT(0x16709A94, 0.1);
@@ -336,9 +372,9 @@ void	waterlevelRev1(void)
 		}
 		if (is_pressed(ST + DL))
 		{
-			if (READU32(0x0065C528) != 0)
+			if (READU32(0x65C528) != 0)
 			{
-				offset = READU32(0x0065C528);
+				offset = READU32(0x65C528);
 				offset = READU32(offset - 0x9AF4);
 				SUBTOFLOAT(offset - 0xACCC, 0.1);
 				SUBTOFLOAT(0x16709A94, 0.1);
@@ -366,10 +402,20 @@ void	t00ccRev1(void)
 	offset = 0;
 	for (int i1 = 0; i1 < 0x2D; i1++)
 	{
-		WRITEU32(0x153765F0 + offset, 0x413C0000);
-		WRITEU32(0x15379B10 + offset, 0x413C0000);
-		WRITEU32(0x15386270 + offset, 0x413C0000);
-		offset += 0x4;
+		if (READU32(0x153765CC) == 0x76697244)
+		{
+			WRITEU32(0x153765F0 + offset, 0x413C0000);
+			WRITEU32(0x15379B10 + offset, 0x413C0000);
+			WRITEU32(0x15386270 + offset, 0x413C0000);
+			offset += 0x4;
+		}
+		if (READU32(0x15376C4C) == 0x76697244)
+		{
+			WRITEU32(0x15376C70 + offset, 0x413C0000);
+			WRITEU32(0x1537A190 + offset, 0x413C0000);
+			WRITEU32(0x153868F0 + offset, 0x413C0000);
+			offset += 0x4;
+		}
 	}
 }
 
@@ -392,10 +438,20 @@ void	f00ccRev1(void)
 	offset = 0;
 	for (int i3 = 0; i3 < 0x2D; i3++)
 	{
-		WRITEU32(0x153765F0 + offset, 0x41A00000);
-		WRITEU32(0x15379B10 + offset, 0x41A00000);
-		WRITEU32(0x15386270 + offset, 0x41A00000);
-		offset += 0x4;
+		if (READU32(0x153765CC) == 0x76697244)
+		{
+			WRITEU32(0x153765F0 + offset, 0x41A00000);
+			WRITEU32(0x15379B10 + offset, 0x41A00000);
+			WRITEU32(0x15386270 + offset, 0x41A00000);
+			offset += 0x4;
+		}
+		if (READU32(0x15376C4C) == 0x76697244)
+		{
+			WRITEU32(0x15376C70 + offset, 0x41A00000);
+			WRITEU32(0x1537A190 + offset, 0x41A00000);
+			WRITEU32(0x153868F0 + offset, 0x41A00000);
+			offset += 0x4;
+		}
 	}
 }
 
@@ -403,33 +459,33 @@ void	vrExtender(void)
 {
 	if (is_pressed(BUTTON_ST))
 	{
-		if (READU32(0x00663D04) != 0)
+		if (READU32(0x663D04) != 0)
 		{
-			offset = READU32(0x00663D04);
+			offset = READU32(0x663D04);
 			WRITEU32(offset - 0xE30, 0xF423F);
 		}
 	}
 	if (is_pressed(BUTTON_DD))
 	{
-		if (READU32(0x00663D04) != 0)
+		if (READU32(0x663D04) != 0)
 		{
-			offset = READU32(0x00663D04);
+			offset = READU32(0x663D04);
 			WRITEU32(offset - 0xE30, 0x0);
 		}
 	}
 	if (is_pressed(BUTTON_DU))
 	{
-		if (READU32(0x00663D04) != 0)
+		if (READU32(0x663D04) != 0)
 		{
-			offset = READU32(0x00663D04);
+			offset = READU32(0x663D04);
 			WRITEU32(offset - 0xE30, 0xAA289);
 		}
 	}
 	if (is_pressed(BUTTON_DR))
 	{
-		if (READU32(0x00663D04) != 0)
+		if (READU32(0x663D04) != 0)
 		{
-			offset = READU32(0x00663D04);
+			offset = READU32(0x663D04);
 			WRITEU32(offset - 0xE30, 0xA2C2A);
 		}
 	}
@@ -512,16 +568,25 @@ void	blueshellrideRev1(void)
 			data = READU32(offset - 0x3CB0);
 			data1 = READU32(offset - 0x3CAC);
 			data2 = READU32(offset - 0x3CA8);
-			if (READU32(0x1400EB70) != 0)
+			if ((READU32(0x1400EB70) != 0) || (READU32(0x1400F178) != 0))
 			{
-				if (READU32(0x1478FDF4) == 1)
+				if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 				{
-					offset = READU32(0x1400EB70);
+					if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+					{
+						offset = READU32 (0x1400EB70);
+					}
+					if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+					{
+						offset = READU32 (0x1400F178);
+					}
+					{
 					offset = READU32(0x518 + offset);
 					offset = READU32(0x1C + offset);
 					WRITEU32(0x24 + offset, data);
 					WRITEU32(0x28 + offset, data1);
 					WRITEU32(0x2C + offset, data2);
+					}
 				}
 			}
 		}
@@ -590,13 +655,13 @@ void	driveanywhereRev0(void)
 
 void	driveanywhereRev1(void)
 {
-	if (READU8(0x1478FDF4) != 1)
+	if ((READU8(0x1478FDF4) != 1) || (READU8(0x14790414) != 1))
 	{
 		WRITEU32(0x655240, 0);
 	}
 	if (is_pressed(BUTTON_SE))
 	{
-		WRITEU32(0x655240, 0x1);
+		WRITEU32(0x655240, 1);
 		WRITEU32(0x6656D8, 0xFFFF);
 	}
 	if (is_pressed(BUTTON_ST))
@@ -606,24 +671,42 @@ void	driveanywhereRev1(void)
 	}
 	if (READU32(0x655240) == 1)
 	{
-		if (READU8(0x1478FDF4) == 1)
+		if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 		{
-		offset = READU32 (0x1400EB70);
-		offset = READU32 (0x518 + offset);
-		offset = READU32 (0x1C + offset);
-		WRITEU32(0x3C + offset, 0);
+			if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+			{
+				offset = READU32 (0x1400EB70);
+			}
+			if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+			{
+				offset = READU32 (0x1400F178);
+			}
+			{
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU32(0x3C + offset, 0);
+			}
 		}
 	}
 	if (is_pressed(BUTTON_DU) && is_pressed(BUTTON_SE))
 	{
 		if (READU32(0x655240) == 1)
 		{
-			if (READU8(0x1478FDF4) == 1)
+			if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 			{
-			offset = READU32 (0x1400EB70);
-			offset = READU32 (0x518 + offset);
-			offset = READU32 (0x1C + offset);
-			WRITEU32(0x3C + offset, 0x41000000);
+				if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+				{
+					offset = READU32 (0x1400EB70);
+				}
+				if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+				{
+					offset = READU32 (0x1400F178);
+				}
+				{
+				offset = READU32 (0x518 + offset);
+				offset = READU32 (0x1C + offset);
+				WRITEU32(0x3C + offset, 0x41000000);
+				}
 			}
 		}
 	}
@@ -631,12 +714,21 @@ void	driveanywhereRev1(void)
 	{
 		if (READU32(0x655240) == 1)
 		{
-			if (READU8(0x1478FDF4) == 1)
+			if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 			{
-			offset = READU32 (0x1400EB70);
-			offset = READU32 (0x518 + offset);
-			offset = READU32 (0x1C + offset);
-			WRITEU32(0x3C + offset, 0xC1000000);
+				if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+				{
+					offset = READU32 (0x1400EB70);
+				}
+				if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+				{
+					offset = READU32 (0x1400F178);
+				}
+				{
+				offset = READU32 (0x518 + offset);
+				offset = READU32 (0x1C + offset);
+				WRITEU32(0x3C + offset, 0xC1000000);
+				}
 			}
 		}
 	}
@@ -680,26 +772,44 @@ void	saveslotRev1(void)
 	static u32 data2 = 0;
 	if (is_pressed(ST + X))
 	{
-		if (READU8(0x1478FDF4) == 1)
+		if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 		{
-			offset = READU32(0x1400EB70);
+			if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+			{
+				offset = READU32 (0x1400EB70);
+			}
+			if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+			{
+				offset = READU32 (0x1400F178);
+			}
+			{
 			offset = READU32(0x518 + offset);
 			offset = READU32(0x1C + offset);
 			data = READU32(0x24 + offset);
 			data1 = READU32(0x28 + offset);
 			data2 = READU32(0x2C + offset);
+			}
 		}
 	}
 	if (is_pressed(ST + Y))
 	{
-		if (READU8(0x1478FDF4) == 1)
+		if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 		{
-			offset = READU32(0x1400EB70);
+			if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+			{
+				offset = READU32 (0x1400EB70);
+			}
+			if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+			{
+				offset = READU32 (0x1400F178);
+			}
+			{
 			offset = READU32(0x518 + offset);
 			offset = READU32(0x1C + offset);
 			WRITEU32(0x24 + offset, data);
 			WRITEU32(0x28 + offset, data1);
 			WRITEU32(0x2C + offset, data2);
+			}
 		}
 	}
 }
@@ -732,30 +842,37 @@ void	nodcRev0(void)
 		{
 			offset = READU32(0xFFFFBF4);
 			offset = READU32(0x5CC + offset);
-			WRITEU8(0x40 + offset, 0x2);
+			WRITEU8(0x40 + offset, 2);
 		}
 	}
 }
 
 void	nodcRev1(void)
 {
-	if (READU8(0x1478FDF4) == 1)
+	if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 	{
 		if (READU32(0xFFFFBF4) > 0x15700000 && (READU32(0xFFFFBF4) < 0x18000000))
 		{
 			offset = READU32(0xFFFFBF4);
 			offset = READU32(0x5CC + offset);
-			WRITEU8(0x40 + offset, 0x2);
+			WRITEU8(0x40 + offset, 2);
 		}
 	}
 }
 
 void	disablefpRev0(void)
 {
-	WRITEU8(0x147909D5, 0x0);
+	WRITEU8(0x147909D5, 0);
 }
 
 void	disablefpRev1(void)
 {
-	WRITEU8(0x1478FDF5, 0x0);
+	if (READU8(0x1478FDF4) == 1)
+	{
+		WRITEU8(0x1478FDF5, 0);
+	}
+	if (READU8(0x14790414) == 1)
+	{
+		WRITEU8(0x14790415, 0);
+	}
 }
