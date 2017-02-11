@@ -543,12 +543,12 @@ void	driveanywhereRev0(void)
 	if (is_pressed(BUTTON_SE))
 	{
 		WRITEU32(0x655240, 0x1);
-		WRITEU32(0x6556D8, 0xFFFF);
+		WRITEU32(0x6656D8, 0xFFFF);
 	}
 	if (is_pressed(BUTTON_ST))
 	{
 		WRITEU32(0x655240, 0);
-		WRITEU32(0x6556D8, 0x14);
+		WRITEU32(0x6656D8, 0x14);
 	}
 	if (READU32(0x655240) == 1)
 	{
@@ -597,12 +597,12 @@ void	driveanywhereRev1(void)
 	if (is_pressed(BUTTON_SE))
 	{
 		WRITEU32(0x655240, 0x1);
-		WRITEU32(0x6556D8, 0xFFFF);
+		WRITEU32(0x6656D8, 0xFFFF);
 	}
 	if (is_pressed(BUTTON_ST))
 	{
 		WRITEU32(0x655240, 0);
-		WRITEU32(0x6556D8, 0x14);
+		WRITEU32(0x6656D8, 0x14);
 	}
 	if (READU32(0x655240) == 1)
 	{
