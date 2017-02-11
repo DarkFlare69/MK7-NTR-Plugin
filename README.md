@@ -1,4 +1,4 @@
-# MK7-NTR-Plugin
+# Mario Kart 7 NTR Plugin
 I'm releasing my first official NTR plugin. This has been written 100% by hand. No converters, such as Gateshark2NTR, were used. I started working on this on Tuesday (2/7/2017) and think it's ready for a pre-release. New updates will be made almost daily (or as often as I can). Check back on the GitHub for the latest build.
 
 Originally, I was planning on only giving this to 1 person but then saw this as a good opportunity to further practice programming in C and release it as a full plugin. There are many plugins being thrown around and leaked, so it's about time one made by hand got officially released by someone who is willing to maintain it and knows how to update it appropriately.
