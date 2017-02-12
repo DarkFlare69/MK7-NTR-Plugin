@@ -1,0 +1,29 @@
+item:
+
+european rev0 17782494
+american rev0 17782494
+european rev0 17782494
+american rev1 177BE494
+
+kart:
+
+european rev0 1400F750
+american rev0 1400F750
+european rev0 1400F750
+american rev1 1400EB70
+
+
+
+D0 8B BE 16
+16BE8BD0
+
+30 9E E9 16
+16E99E30
+
+70 A2 EB 16
+16EBA270
+
+70 B6 E9 16
+16E9B670
+
+1400F178
