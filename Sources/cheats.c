@@ -491,6 +491,20 @@ void	vrExtender(void)
 	}
 }
 
+void	unlockEverything(void)
+{
+	if (READU32(0x6673C8) != 0)
+	{
+		offset = READU32(0x6673C8);
+		WRITEU8(0x6BA3 + offset, 0x3F);
+		WRITEU32(0x6BA4 + offset, 0x1FF003F);
+		WRITEU16(0x6BAC + offset, 0x3FFF);
+		WRITEU8(0x6BB0 + offset, 0x7F);
+		WRITEU8(0x6BB4 + offset, 0x3F);
+		WRITEU8(0x6BB8 + offset, 0xFF);
+	}
+}
+
 void	unlockeverythingRev1(void)
 {
 	WRITEU32(0x1413C148, 0x1FF003F);
@@ -749,7 +763,6 @@ void	driveanywhereRev1(void)
 			}
 		}
 	}
-}
 	if (is_pressed(BUTTON_DD) && is_pressed(BUTTON_SE))
 	{
 		if (READU32(0x655244) == 1)

@@ -123,8 +123,9 @@ void    my_menus(void)
             new_entry_with_note("VR Extender (See Note)", vrext_note, vrExtender);
 			new_entry_with_note("Disable First Person View", firstperson_note, disablefpRev0);
 			new_entry_with_note("No Disconnect", nodc_note, nodcRev0);
-            new_entry_with_note("Unlock Everything (Rev0)", unlock_note, unlockeverythingRev0);
-            new_entry_with_note("Unlock Everything (Rev0 1.1)", unlock_note, unlockeverythingRev011);
+            new_entry_with_note("Unlock Everything", unlock_note, unlockEverything);
+			// new_entry_with_note("Unlock Everything (Rev0)", unlock_note, unlockeverythingRev0);
+            // new_entry_with_note("Unlock Everything (Rev0 1.1)", unlock_note, unlockeverythingRev011);
         exit_spoiler();
     exit_spoiler();
     new_spoiler("Rev1 Codes");
@@ -160,7 +161,8 @@ void    my_menus(void)
             new_entry_with_note("VR Extender (See Note)", vrext_note, vrExtender);
 			new_entry_with_note("Disable First Person View", firstperson_note, disablefpRev1);
 			new_entry_with_note("No Disconnect", nodc_note, nodcRev1);
-            new_entry_with_note("Unlock Everything", unlock_note, unlockeverythingRev1);
+			new_entry_with_note("Unlock Everything", unlock_note, unlockEverything);
+            // new_entry_with_note("Unlock Everything", unlock_note, unlockeverythingRev1);
         exit_spoiler();
     exit_spoiler();
 }

@@ -59,5 +59,6 @@ void	nodcRev0(void);
 void	nodcRev1(void);
 void	disablefpRev0(void);
 void	disablefpRev1(void);
+void	unlockEverything(void);
 
 #endif
