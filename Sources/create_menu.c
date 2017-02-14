@@ -86,6 +86,7 @@ char	*builder_name = "DarkFlare";
 	static const char * const countdown_note = "You will be able to race and use items during the countdown.";
 	static const char * const nodc_note = "You will not disconnect for being idle or going backwards. Obviously, normal network communication errors cannot be bypassed.";
 	static const char * const firstperson_note = "You will not be able to enter first person view.";
+	static const char * const dropshroom_note = "When you throw a green shell, you will actually drop a mushroom. This code can only be deactivated by deactivating the code and then restarting a race.";
 
 
 void    my_menus(void)
@@ -108,6 +109,7 @@ void    my_menus(void)
 		exit_spoiler();
         new_spoiler("Item Codes");
             new_entry_with_note("Item Wheel (See Note)", itemwheel_note, itemwheelRev0);
+			new_entry_with_note("Drop Mushrooms (See Note)", dropshroom_note, dropMushrooms);
             new_entry_with_note("Fast Blue Shell", fastblue_note, fastBlue);
             new_entry_with_note("Stopped Blue Shell", stoppedblue_note, stoppedBlue);
             new_entry_with_note("Fast Green & Red Shells", fastgr_note, fastGreen);
@@ -146,6 +148,7 @@ void    my_menus(void)
 		exit_spoiler();
         new_spoiler("Item Codes");
             new_entry_with_note("Item Wheel (See Note)", itemwheel_note, itemwheelRev1);
+			new_entry_with_note("Drop Mushrooms (See Note)", dropshroom_note, dropMushrooms);
             new_entry_with_note("Fast Blue Shell", fastblue_note, fastBlue);
             new_entry_with_note("Stopped Blue Shell", stoppedblue_note, stoppedBlue);
             new_entry_with_note("Fast Green & Red Shells", fastgr_note, fastGreen);

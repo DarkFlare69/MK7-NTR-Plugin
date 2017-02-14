@@ -60,5 +60,6 @@ void	nodcRev1(void);
 void	disablefpRev0(void);
 void	disablefpRev1(void);
 void	unlockEverything(void);
+void	dropMushrooms(void);
 
 #endif
