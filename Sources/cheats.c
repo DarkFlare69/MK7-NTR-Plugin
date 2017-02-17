@@ -931,7 +931,7 @@ void	dropMushrooms(void)
 	{
 		offset = READU32(0xFFFFBF4);
 		offset = READU32(0x5D0 + offset);
-		data = READU32(0x1F8);
+		data = READU32(0x1F8 + offset);
 		WRITEU32(0x1D0 + offset, data);
 	}
 }
