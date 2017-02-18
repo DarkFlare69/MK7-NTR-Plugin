@@ -926,12 +926,18 @@ void	disablefpRev1(void)
 
 void	dropMushrooms(void)
 {
-	u32 data = 0;
+	u32 data9 = 0;
 	if ((READU8(0x147909D4) == 1) || (READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
 	{
-		offset = READU32(0xFFFFBF4);
-		offset = READU32(0x5D0 + offset);
-		data = READU32(0x1F8 + offset);
-		WRITEU32(0x1D0 + offset, data);
+		if (READU32(0xFFFFBF4) != 0)
+		{
+			offset = READU32(0xFFFFBF4);
+			if (READU32(0x5D0 + offset) != 0)
+			{
+				offset = READU32(0x5D0 + offset);
+				data9 = READU32(0x1F8 + offset);
+				WRITEU32(0x1D0 + offset, data9);
+			}
+		}
 	}
 }
