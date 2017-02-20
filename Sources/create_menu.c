@@ -88,6 +88,7 @@ char	*builder_name = "DarkFlare";
 	static const char * const firstperson_note = "You will not be able to enter first person view.";
 	static const char * const dropshroom_note = "When you throw a green shell, you will actually drop a mushroom. This code can only be deactivated by deactivating the code and then restarting a race.";
 	static const char * const moonjump_note = "Start + R = Jump";
+	static const char * const timer_note = "Your timer will be set to 4:59.9xx. In battles, you can hold up the room for as long as you want. In races, you will always lose.";
 	
 
 void    my_menus(void)
@@ -121,6 +122,7 @@ void    my_menus(void)
         exit_spoiler();
         new_spoiler("Course Codes");
 			new_entry_with_note("No Countdown", countdown_note, noCountdown);
+			new_entry_with_note("4:59.9xx Timer", timer_note, maxTimer);
             new_entry_with_note("Water Level Modifier (See Note)", water_note, waterlevelRev0);
         exit_spoiler();
         new_spoiler("Menu & Unlock Codes");
@@ -128,8 +130,6 @@ void    my_menus(void)
 			new_entry_with_note("Disable First Person View", firstperson_note, disablefpRev0);
 			new_entry_with_note("No Disconnect", nodc_note, nodcRev0);
             new_entry_with_note("Unlock Everything", unlock_note, unlockEverything);
-			// new_entry_with_note("Unlock Everything (Rev0)", unlock_note, unlockeverythingRev0);
-            // new_entry_with_note("Unlock Everything (Rev0 1.1)", unlock_note, unlockeverythingRev011);
         exit_spoiler();
     exit_spoiler();
     new_spoiler("Rev1 Codes");
@@ -161,6 +161,7 @@ void    my_menus(void)
         exit_spoiler();
         new_spoiler("Course Codes");
 			new_entry_with_note("No Countdown", countdown_note, noCountdown);
+			new_entry_with_note("4:59.9xx Timer", timer_note, maxTimer);
             new_entry_with_note("Water Level Modifier (See Note)", water_note, waterlevelRev1);
         exit_spoiler();
         new_spoiler("Menu & Unlock Codes");
@@ -168,7 +169,6 @@ void    my_menus(void)
 			new_entry_with_note("Disable First Person View", firstperson_note, disablefpRev1);
 			new_entry_with_note("No Disconnect", nodc_note, nodcRev1);
 			new_entry_with_note("Unlock Everything", unlock_note, unlockEverything);
-            // new_entry_with_note("Unlock Everything", unlock_note, unlockeverythingRev1);
         exit_spoiler();
     exit_spoiler();
 }
