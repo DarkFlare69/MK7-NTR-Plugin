@@ -61,5 +61,6 @@ void	disablefpRev0(void);
 void	disablefpRev1(void);
 void	unlockEverything(void);
 void	dropMushrooms(void);
+void	moonJump(void);
 
 #endif

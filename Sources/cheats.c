@@ -9,10 +9,13 @@ void	invincibilityRev0(void)
 {
 	if (READU8(0x147909D4) == 1)
 	{
-		offset = READU32 (0x1400F750);
-		offset = READU32 (0x518 + offset);
-		offset = READU32 (0x1C + offset);
-		WRITEU16(0x102C + offset, 0xFFFF);
+		if (READU32(0x1400F750) != 0)
+		{
+			offset = READU32 (0x1400F750);
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU16(0x102C + offset, 0xFFFF);
+		}
 	}
 }
 
@@ -40,10 +43,13 @@ void	blackkartRev0(void)
 {
 	if (READU8(0x147909D4) == 1)
 	{
-		offset = READU32 (0x1400F750);
-		offset = READU32 (0x518 + offset);
-		offset = READU32 (0x1C + offset);
-		WRITEU16(0xFF8 + offset, 0xFFFF);
+		if (READU32(0x1400F750) != 0)
+		{
+			offset = READU32 (0x1400F750);
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU16(0xFF8 + offset, 0xFFFF);
+		}
 	}
 }
 
@@ -71,10 +77,13 @@ void	shockedRev0(void)
 {
 	if (READU8(0x147909D4) == 1)
 	{
-		offset = READU32 (0x1400F750);
-		offset = READU32 (0x518 + offset);
-		offset = READU32 (0x1C + offset);
-		WRITEU16(0x1000 + offset, 0xFFFF);
+		if (READU32(0x1400F750) != 0)
+		{
+			offset = READU32 (0x1400F750);
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU16(0x1000 + offset, 0xFFFF);
+		}
 	}
 }
 
@@ -102,10 +111,13 @@ void	crushedRev0(void)
 {
 	if (READU8(0x147909D4) == 1)
 	{
-		offset = READU32 (0x1400F750);
-		offset = READU32 (0x518 + offset);
-		offset = READU32 (0x1C + offset);
-		WRITEU16(0x1004 + offset, 0xFFFF);
+		if (READU32(0x1400F750) != 0)
+		{
+			offset = READU32 (0x1400F750);
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU16(0x1004 + offset, 0xFFFF);
+		}
 	}
 }
 
@@ -505,7 +517,7 @@ void	unlockEverything(void)
 	}
 }
 
-void	unlockeverythingRev1(void)
+void	unlockeverythingRev1(void) // dead
 {
 	WRITEU32(0x1413C148, 0x1FF003F);
 	WRITEU8(0x1413C147, 0xFF);
@@ -516,7 +528,7 @@ void	unlockeverythingRev1(void)
 	WRITEU32(0x1413BF30, 99999);
 }
 
-void	unlockeverythingRev011(void)
+void	unlockeverythingRev011(void) // dead
 {
 	WRITEU32(0x1413CD28, 0x1FF003F);
 	WRITEU8(0x1413CD27, 0x3F);
@@ -527,7 +539,7 @@ void	unlockeverythingRev011(void)
 	WRITEU32(0x1413CB10, 99999);
 }
 
-void	unlockeverythingRev0(void)
+void	unlockeverythingRev0(void) // dead
 {
 	WRITEU32(0x1413C99C, 0x1FF003F);
 	WRITEU8(0x1413C99B, 0x3F);
@@ -559,9 +571,12 @@ void	blueshellrideRev0(void)
 					offset = READU32(0x1400F750);
 					offset = READU32(0x518 + offset);
 					offset = READU32(0x1C + offset);
-					WRITEU32(0x24 + offset, data);
-					WRITEU32(0x28 + offset, data1);
-					WRITEU32(0x2C + offset, data2);
+					if ((READU32(0x24 + offset) > 30000000) && (READU32(0x28 + offset) > 00000001) && (READU32(0x2C + offset) > 30000000))
+					{
+						WRITEU32(0x24 + offset, data);
+						WRITEU32(0x28 + offset, data1);
+						WRITEU32(0x2C + offset, data2);
+					}
 				}
 			}
 		}
@@ -588,18 +603,19 @@ void	blueshellrideRev1(void)
 				{
 					if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
 					{
-						offset = READU32 (0x1400EB70);
+						offset = READU32(0x1400EB70);
 					}
 					if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
 					{
-						offset = READU32 (0x1400F178);
+						offset = READU32(0x1400F178);
 					}
-					{
 					offset = READU32(0x518 + offset);
 					offset = READU32(0x1C + offset);
-					WRITEU32(0x24 + offset, data);
-					WRITEU32(0x28 + offset, data1);
-					WRITEU32(0x2C + offset, data2);
+					if ((READU32(0x24 + offset) > 30000000) && (READU32(0x28 + offset) > 00000001) && (READU32(0x2C + offset) > 30000000))
+					{
+						WRITEU32(0x24 + offset, data);
+						WRITEU32(0x28 + offset, data1);
+						WRITEU32(0x2C + offset, data2);
 					}
 				}
 			}
@@ -938,6 +954,19 @@ void	dropMushrooms(void)
 				data9 = READU32(0x1F8 + offset);
 				WRITEU32(0x1D0 + offset, data9);
 			}
+		}
+	}
+}
+
+void	moonJump(void)
+{
+	if(is_pressed(ST + R))
+	{
+		if ((READU8(0x147909D4) == 1) || (READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1) || (READU8(0x147909F4) == 1))
+		{
+			offset = READU32(0x140005AC);
+			offset = READU32(0x650 + offset);
+			WRITEU32(offset - 0x1D5C, 0x41200000);
 		}
 	}
 }

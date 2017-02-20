@@ -87,7 +87,8 @@ char	*builder_name = "DarkFlare";
 	static const char * const nodc_note = "You will not disconnect for being idle or going backwards. Obviously, normal network communication errors cannot be bypassed.";
 	static const char * const firstperson_note = "You will not be able to enter first person view.";
 	static const char * const dropshroom_note = "When you throw a green shell, you will actually drop a mushroom. This code can only be deactivated by deactivating the code and then restarting a race.";
-
+	static const char * const moonjump_note = "Start + R = Jump";
+	
 
 void    my_menus(void)
 {
@@ -98,6 +99,7 @@ void    my_menus(void)
             new_entry_with_note("Always Shocked", shock_note, shockedRev0);
             new_entry_with_note("Always Crushed (See Note)", crush_note, crushedRev0);
             new_entry_with_note("Drive Anywhere (See Note)", drive_note, driveanywhereRev0);
+			new_entry_with_note("Moonjump (See Note)", moonjump_note, moonJump);
 			new_entry_with_note("Save Slot Teleporter (See Note)", saveslot_note, saveslotRev0);
             new_entry_with_note("Instant MiniTurbo", mt_note, instantMt);
 			new_entry_with_note("Huge Bunnyhop", bunnyhop_note, hugeBunnyhop);
@@ -137,6 +139,7 @@ void    my_menus(void)
             new_entry_with_note("Always Shocked", shock_note, shockedRev1);
             new_entry_with_note("Always Crushed (See Note)", crush_note, crushedRev1);
 			new_entry_with_note("Drive Anywhere (See Note)", drive_note, driveanywhereRev1);
+			new_entry_with_note("Moonjump (See Note)", moonjump_note, moonJump);
 			new_entry_with_note("Save Slot Teleporter (See Note)", saveslot_note, saveslotRev1);
             new_entry_with_note("Instant MiniTurbo", mt_note, instantMt);
 			new_entry_with_note("Huge Bunnyhop", bunnyhop_note, hugeBunnyhop);
