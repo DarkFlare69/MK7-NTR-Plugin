@@ -973,7 +973,7 @@ void	moonJump(void)
 
 void	maxTimer(void)
 {
-	if(READU32(0x65C528))
+	if (READU32(0x65C528) == 1)
 	{
 		offset = READU32(0x65C528);
 		WRITEU32(0x80 + offset, 0x464B);
