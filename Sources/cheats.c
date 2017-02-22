@@ -960,7 +960,7 @@ void	dropMushrooms(void)
 
 void	moonJump(void)
 {
-	if(is_pressed(ST + R))
+	if (is_pressed(ST + R))
 	{
 		if ((READU8(0x147909D4) == 1) || (READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1) || (READU8(0x147909F4) == 1))
 		{
