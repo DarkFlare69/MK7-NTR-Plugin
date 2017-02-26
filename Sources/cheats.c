@@ -4,7 +4,6 @@
 u32 data = 0;
 u32 offset = 0;
 
-
 void	invincibilityRev0(void)
 {
 	if (READU8(0x147909D4) == 1)
@@ -35,6 +34,40 @@ void	invincibilityRev1(void)
 			offset = READU32 (0x518 + offset);
 			offset = READU32 (0x1C + offset);
 			WRITEU16(0x102C + offset, 0xFFFF);
+		}
+	}
+}
+
+void	starpowerRev0(void)
+{
+	if (READU8(0x147909D4) == 1)
+	{
+		if (READU32(0x1400F750) != 0)
+		{
+			offset = READU32 (0x1400F750);
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU16(0xFF4 + offset, 0xFFFF);
+		}
+	}
+}
+
+void	starpowerRev1(void)
+{
+	if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
+	{
+		if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+		{
+			offset = READU32 (0x1400EB70);
+		}
+		if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+		{
+			offset = READU32 (0x1400F178);
+		}
+		{
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU16(0xFF4 + offset, 0xFFFF);
 		}
 	}
 }

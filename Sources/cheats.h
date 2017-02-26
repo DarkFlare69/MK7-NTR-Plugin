@@ -63,5 +63,7 @@ void	unlockEverything(void);
 void	dropMushrooms(void);
 void	moonJump(void);
 void	maxTimer(void);
+void	starpowerRev0(void);
+void	starpowerRev1(void);
 
 #endif

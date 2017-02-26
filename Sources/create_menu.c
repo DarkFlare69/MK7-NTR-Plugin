@@ -89,6 +89,7 @@ char	*builder_name = "DarkFlare";
 	static const char * const dropshroom_note = "When you throw a green shell, you will actually drop a mushroom. This code can only be deactivated by deactivating the code and then restarting a race.";
 	static const char * const moonjump_note = "Start + R = Jump";
 	static const char * const timer_note = "Your timer will be set to 4:59.9xx. In battles, you can hold up the room for as long as you want. In races, you will always lose.";
+	static const char * const starpower_note = "You will always be invincibile as if you had a star.";
 	
 
 void    my_menus(void)
@@ -112,6 +113,7 @@ void    my_menus(void)
 		exit_spoiler();
         new_spoiler("Item Codes");
             new_entry_with_note("Item Wheel (See Note)", itemwheel_note, itemwheelRev0);
+			new_entry_with_note("Star Invincibility", starpower_note, starpowerRev0);
 			new_entry_with_note("Drop Mushrooms (See Note)", dropshroom_note, dropMushrooms);
             new_entry_with_note("Fast Blue Shell", fastblue_note, fastBlue);
             new_entry_with_note("Stopped Blue Shell", stoppedblue_note, stoppedBlue);
@@ -151,6 +153,7 @@ void    my_menus(void)
 		exit_spoiler();
         new_spoiler("Item Codes");
             new_entry_with_note("Item Wheel (See Note)", itemwheel_note, itemwheelRev1);
+			new_entry_with_note("Star Invincibility", starpower_note, starpowerRev1);
 			new_entry_with_note("Drop Mushrooms (See Note)", dropshroom_note, dropMushrooms);
             new_entry_with_note("Fast Blue Shell", fastblue_note, fastBlue);
             new_entry_with_note("Stopped Blue Shell", stoppedblue_note, stoppedBlue);
