@@ -61,9 +61,22 @@ void	disablefpRev0(void);
 void	disablefpRev1(void);
 void	unlockEverything(void);
 void	dropMushrooms(void);
-void	moonJump(void);
+void	moonjumpRev0(void);
+void	moonjumpRev1(void);
 void	maxTimer(void);
 void	starpowerRev0(void);
 void	starpowerRev1(void);
+void	writeLocation(u32 location);
+void	writeFlag(u8 flag);
+void	region_France(void);
+void	region_Hawaii(void);
+void	region_UpperAntartica(void);
+void	region_NorthPole(void);
+void	region_Iran(void);
+void	region_SaudiArabia(void);
+void	region_Cuba(void);
+void	region_Russia(void);
+void	region_Phillippines(void);
+void	flag_Japan(void);
 
 #endif

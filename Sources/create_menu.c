@@ -101,7 +101,7 @@ void    my_menus(void)
             new_entry_with_note("Always Shocked", shock_note, shockedRev0);
             new_entry_with_note("Always Crushed (See Note)", crush_note, crushedRev0);
             new_entry_with_note("Drive Anywhere (See Note)", drive_note, driveanywhereRev0);
-			new_entry_with_note("Moonjump (See Note)", moonjump_note, moonJump);
+			new_entry_with_note("Moonjump (See Note)", moonjump_note, moonjumpRev0);
 			new_entry_with_note("Save Slot Teleporter (See Note)", saveslot_note, saveslotRev0);
             new_entry_with_note("Instant MiniTurbo", mt_note, instantMt);
 			new_entry_with_note("Huge Bunnyhop", bunnyhop_note, hugeBunnyhop);
@@ -141,7 +141,7 @@ void    my_menus(void)
             new_entry_with_note("Always Shocked", shock_note, shockedRev1);
             new_entry_with_note("Always Crushed (See Note)", crush_note, crushedRev1);
 			new_entry_with_note("Drive Anywhere (See Note)", drive_note, driveanywhereRev1);
-			new_entry_with_note("Moonjump (See Note)", moonjump_note, moonJump);
+			new_entry_with_note("Moonjump (See Note)", moonjump_note, moonjumpRev1);
 			new_entry_with_note("Save Slot Teleporter (See Note)", saveslot_note, saveslotRev1);
             new_entry_with_note("Instant MiniTurbo", mt_note, instantMt);
 			new_entry_with_note("Huge Bunnyhop", bunnyhop_note, hugeBunnyhop);
@@ -174,4 +174,20 @@ void    my_menus(void)
 			new_entry_with_note("Unlock Everything", unlock_note, unlockEverything);
         exit_spoiler();
     exit_spoiler();
+	new_spoiler("Region Codes");
+        new_spoiler("Globe Coordinates");
+			new_entry("Saudi Arabia", region_SaudiArabia);
+            new_entry("France", region_France);
+			new_entry("Hawaii", region_Hawaii);
+			new_entry("Antarctica", region_UpperAntartica);
+			new_entry("North Pole", region_NorthPole);
+			new_entry("Iran", region_Iran);
+			new_entry("Cuba", region_Cuba);
+			new_entry("Russia", region_Russia);
+			new_entry("Philippines", region_Phillippines);
+        exit_spoiler();
+		new_spoiler("Flag");
+			new_entry("Japan", flag_Japan);
+		exit_spoiler();
+	exit_spoiler();
 }
