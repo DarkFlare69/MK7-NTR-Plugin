@@ -102,92 +102,92 @@ u8 Paraguay = 41;
 u8 Peru = 42;
 u8 StKittsAndNevis = 43;
 u8 StLucia = 44;
-/* 45u8 St. Vincent and the Grenadines    ----   will finish later
-46u8 Suriname
-47u8 Trinidad and Tobago
-48u8 Turks and Caicos Islands
-49u8 United States
-50u8 Uruguay
-51u8 US Virgin Islands
-52u8 Venezuela
-64u8 Albania
-65u8 Australia
-66u8 Austria
-67u8 Belgium
-68u8 Bosnia and Herzegovina
-69u8 Botswana
-70u8 Bulgaria
-71u8 Croatia
-72u8 Cyprus
-73u8 Czech Republic
-74u8 Denmark
-75u8 Estonia
-76u8 Finland
-77u8 France
-78u8 Germany
-79u8 Greece
-80u8 Hungary
-81u8 Iceland
-82u8 Ireland
-83u8 Italy
-84u8 Latvia
-85u8 Lesotho
-86u8 Lichtenstein
-87u8 Lithuania
-88u8 Luxembourg
-89u8 F.Y.R of Macedonia
-90u8 Malta
-91u8 Montenegro
-92u8 Mozambique
-93u8 Namibia
-94u8 Netherlands
-95u8 New Zealand
-96u8 Norway
-97u8 Poland
-98u8 Portugal
-99u8 Romania
-100u8 Russia
-101u8 Serbia
-102u8 Slovakia
-103u8 Slovenia
-104u8 South Africa
-105u8 Spain
-106u8 Swaziland
-107u8 Sweden
-108u8 Switzerland
-109u8 Turkey
-110u8 United Kingdom
-111u8 Zambia
-112u8 Zimbabwe
-113u8 Azerbaijan
-114u8 Mauritania (Islamic Republic of Mauritania)
-115u8 Mali (Republic of Mali)
-116u8 Niger (Republic of Niger)
-117u8 Chad (Republic of Chad)
-118u8 Sudan (Republic of the Sudan)
-119u8 Eritrea (State of Eritrea)
-120u8 Dijibouti (Republic of Djibouti)
-121u8 Somalia (Somali Republic)
-128u8 Taiwan
-136u8 South Korea
-144u8 Hong Kong
-145u8 Macao
-152u8 Indonesia
-153u8 Singapore
-154u8 Thailand
-155u8 Philippines
-156u8 Malaysia
-160u8 China
-168u8 U.A.E.
-169u8 India
-170u8 Egypt
-171u8 Oman
-172u8 Qatar
-173u8 Kuwait
-174u8 Saudi Arabia
-175u8 Syria
-176u8 Bahrain
-177u8 Jordan */
+u8 StVincentAndTheGrenadines = 45;
+u8 Suriname = 46;
+u8 TrinidadAndTobago = 47;
+u8 TurksAndCaicosIslands = 48;
+u8 UnitedStates1 = 49;
+u8 Uruguay = 50;
+u8 USVirginIslands = 51;
+u8 Venezuela = 52;
+u8 Albania = 64;
+u8 Australia1 = 65;
+u8 Austria = 66;
+u8 Belgium = 67;
+u8 BosniaAndHerzegovina = 68;
+u8 Botswana = 69;
+u8 Bulgaria = 70;
+u8 Croatia = 71;
+u8 Cyprus = 72;
+u8 CzechRepublic = 73;
+u8 Denmark = 74;
+u8 Estonia = 75;
+u8 Finland = 76;
+u8 France1 = 77;
+u8 Germany = 78;
+u8 Greece = 79;
+u8 Hungary = 80;
+u8 Iceland1 = 81;
+u8 Ireland = 82;
+u8 Italy = 83;
+u8 Latvia = 84;
+u8 Lesotho = 85;
+u8 Lichtenstein = 86;
+u8 Lithuania = 87;
+u8 Luxembourg = 88;
+u8 FYROfMacedonia = 89;
+u8 Malta = 90;
+u8 Montenegro = 91;
+u8 Mozambique = 92;
+u8 Namibia = 93;
+u8 Netherlands = 94;
+u8 NewZealand = 95;
+u8 Norway = 96;
+u8 Poland = 97;
+u8 Portugal = 98;
+u8 Romania = 99;
+u8 Russia = 100;
+u8 Serbia = 101;
+u8 Slovakia = 102;
+u8 Slovenia = 103;
+u8 SouthAfrica = 104;
+u8 Spain = 105;
+u8 Swaziland = 106;
+u8 Sweden = 107;
+u8 Switzerland = 108;
+u8 Turkey = 109;
+u8 UnitedKingdom = 110;
+u8 Zambia = 111;
+u8 Zimbabwe = 112;
+u8 Azerbaijan = 113;
+u8 Mauritania = 114;
+u8 Mali = 115;
+u8 Niger = 116;
+u8 Chad = 117;
+u8 Sudan = 118;
+u8 Eritrea = 119;
+u8 Dijibouti = 120;
+u8 Somalia = 121;
+u8 Taiwan = 128;
+u8 SouthKorea = 136;
+u8 HongKong1 = 144;
+u8 Macao = 145;
+u8 Indonesia = 152;
+u8 Singapore = 153;
+u8 Thailand = 154;
+u8 Philippines = 155;
+u8 Malaysia1 = 156;
+u8 China = 160;
+u8 UAE = 168;
+u8 India = 169;
+u8 Egypt = 170;
+u8 Oman = 171;
+u8 Qatar = 172;
+u8 Kuwait = 173;
+u8 SaudiArabia1 = 174;
+u8 Syria = 175;
+u8 Bahrain = 176;
+u8 Jordan = 177;
 
 void	invincibilityRev0(void)
 {
