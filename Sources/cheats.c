@@ -64,7 +64,7 @@ u32 MoreAntarctica6 = 0x9590B1BB;
 u32 WesternAustraliaAustralia = 0x57C0EC27;
 u32 AustralianCapitalTerritoryAustralia = 0x66C0E927;
 
-u8 Japan = 1;
+u8 Japan = 1; // credit to WiiBrew for all of these flag IDs
 u8 Anguilla = 8;
 u8 AntiguaAndBarbuda = 9;
 u8 Argentina = 10;
@@ -89,7 +89,7 @@ u8 Grenada = 28;
 u8 Guadeloupe = 29;
 u8 Guatemala = 30;
 u8 Guyana1 = 31;
-u8 Haiti2 = 32;
+u8 Haiti1 = 32;
 u8 Honduras = 33;
 u8 Jamaica = 34;
 u8 Martinique = 35;
@@ -1225,6 +1225,458 @@ void	maxTimer(void)
 	}
 }
 
+void stalkingRev0(void) // filthy stalking code converted by Anto's converter. I was too lazy to write the whole thing
+{
+	u32 data;
+	u32 offset;
+
+	data = 0;
+	offset = 0;
+
+	WRITEU32(0x00444AB8 + offset, 0xE1A00000);
+	WRITEU32(0x0030D5C8 + offset, 0xE1A00000);
+	if (is_pressed(0x00000500))
+	{
+		offset = 0x10000000;
+		WRITEU32(0x04000007 + offset, 0x00000000);
+		WRITEU32(0x04137904 + offset, 0x00000000);
+	}
+
+	data = 0;
+	offset = 0;
+	if (READU32(0x0065C528 + offset) != 0x00000000)
+	{
+		offset = READU32(0x0065C528 + offset);
+		if (READU32(0x000000C8 + offset) > 0x16000000)
+		{
+			if (READU32(0x000000C8 + offset) < 0x18000000)
+			{
+				offset = READU32(0x000000C8 + offset);
+				WRITEU32(0x00000034 + offset, 0x00000000);
+				WRITEU32(0x00000038 + offset, 0x00000000);
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+	if (is_pressed(0x00000082))
+	{
+		data = READU32(0x14000007 + offset);
+		WRITEU32(0x00654000 + offset, data);
+		offset += 4;
+	}
+
+	data = 0;
+	offset = 0;
+	data = READU32(0x14137904 + offset);
+	WRITEU32(0x00654004 + offset, data);
+	offset += 4;
+
+	data = 0;
+	offset = 0;
+	if (is_pressed(0x00000042))
+	{
+		data = READU32(0x00654000 + offset);
+		WRITEU32(0x14000007 + offset, data);
+		offset += 4;
+	}
+
+	data = 0;
+	offset = 0;
+	data = READU32(0x00654004 + offset);
+	WRITEU32(0x14137904 + offset, data);
+	offset += 4;
+
+	data = 0;
+	offset = 0;
+	offset = 0x10000000;
+	if (READU32(0x04137904 + offset) > 0x00000050)
+	{
+		WRITEU32(0x04000007 + offset, 0x00000001);
+		if (READU32(0x04137904 + offset) > 0x000000A0)
+		{
+			WRITEU32(0x04000007 + offset, 0x00000002);
+			if (READU32(0x04137904 + offset) > 0x000000F0)
+			{
+				WRITEU32(0x04000007 + offset, 0x00000003);
+				if (READU32(0x04137904 + offset) > 0x00000140)
+				{
+					WRITEU32(0x04000007 + offset, 0x00000004);
+					if (READU32(0x04137904 + offset) > 0x00000190)
+					{
+						WRITEU32(0x04000007 + offset, 0x00000005);
+						if (READU32(0x04137904 + offset) > 0x000001E0)
+						{
+							WRITEU32(0x04000007 + offset, 0x00000006);
+							if (READU32(0x04137904 + offset) > 0x00000230)
+							{
+								WRITEU32(0x04000007 + offset, 0x00000007);
+								if (READU32(0x04137904 + offset) > 0x00000280)
+								{
+									WRITEU32(0x04000007 + offset, 0x00000008);
+									if (READU32(0x04137904 + offset) > 0x000002C0)
+									{
+										WRITEU32(0x04137904 + offset, 0x00000000);
+										WRITEU32(0x04000007 + offset, 0x00000000);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+	offset = 0x10000000;
+	if (READU16(0x047909D4 + offset) == 0x00000001)
+	{
+		if (READU16(0x054733E0 + offset) > 0x00000007)
+		{
+			if (READU16(0x04000007 + offset) == 0x00000001)
+			{
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000020E0 + offset);
+				data = READU32(0x00000024 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000024 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000020E0 + offset);
+				data = READU32(0x00000028 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000028 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000020E0 + offset);
+				data = READU32(0x0000002C + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x0000002C + offset, data);
+				offset += 4;
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+	offset = 0x10000000;
+	if (READU16(0x047909D4 + offset) == 0x00000001)
+	{
+		if (READU16(0x054733E0 + offset) > 0x00000006)
+		{
+			if (READU16(0x04000007 + offset) == 0x00000002)
+			{
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002124 + offset);
+				data = READU32(0x00000024 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000024 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002124 + offset);
+				data = READU32(0x00000028 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000028 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002124 + offset);
+				data = READU32(0x0000002C + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x0000002C + offset, data);
+				offset += 4;
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+	offset = 0x10000000;
+	if (READU16(0x047909D4 + offset) == 0x00000001)
+	{
+		if (READU16(0x054733E0 + offset) > 0x00000005)
+		{
+			if (READU16(0x04000007 + offset) == 0x00000003)
+			{
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002168 + offset);
+				data = READU32(0x00000024 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000024 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002168 + offset);
+				data = READU32(0x00000028 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000028 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002168 + offset);
+				data = READU32(0x0000002C + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x0000002C + offset, data);
+				offset += 4;
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+	offset = 0x10000000;
+	if (READU16(0x047909D4 + offset) == 0x00000001)
+	{
+		if (READU16(0x054733E0 + offset) > 0x00000004)
+		{
+			if (READU16(0x04000007 + offset) == 0x00000004)
+			{
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000021AC + offset);
+				data = READU32(0x00000024 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000024 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000021AC + offset);
+				data = READU32(0x00000028 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000028 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000021AC + offset);
+				data = READU32(0x0000002C + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x0000002C + offset, data);
+				offset += 4;
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+	offset = 0x10000000;
+	if (READU16(0x047909D4 + offset) == 0x00000001)
+	{
+		if (READU16(0x054733E0 + offset) > 0x00000003)
+		{
+			if (READU16(0x04000007 + offset) == 0x00000005)
+			{
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000021F0 + offset);
+				data = READU32(0x00000024 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000024 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000021F0 + offset);
+				data = READU32(0x00000028 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000028 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000021F0 + offset);
+				data = READU32(0x0000002C + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x0000002C + offset, data);
+				offset += 4;
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+	offset = 0x10000000;
+	if (READU16(0x054733E0 + offset) > 0x00000002)
+	{
+		if (READU16(0x047909D4 + offset) == 0x00000001)
+		{
+			if (READU16(0x04000007 + offset) == 0x00000006)
+			{
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002234 + offset);
+				data = READU32(0x00000024 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000024 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002234 + offset);
+				data = READU32(0x00000028 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000028 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002234 + offset);
+				data = READU32(0x0000002C + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x0000002C + offset, data);
+				offset += 4;
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+	offset = 0x10000000;
+	if (READU16(0x054733E0 + offset) > 0x00000001)
+	{
+		if (READU16(0x047909D4 + offset) == 0x00000001)
+		{
+			if (READU16(0x04000007 + offset) == 0x00000007)
+			{
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002278 + offset);
+				data = READU32(0x00000024 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000024 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002278 + offset);
+				data = READU32(0x00000028 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000028 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x00002278 + offset);
+				data = READU32(0x0000002C + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x0000002C + offset, data);
+				offset += 4;
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+	offset = 0x10000000;
+	if (READU16(0x054733E0 + offset) > 0x00000000)
+	{
+		if (READU16(0x047909D4 + offset) == 0x00000001)
+		{
+			if (READU16(0x04000007 + offset) == 0x00000008)
+			{
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000022BC + offset);
+				data = READU32(0x00000024 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000024 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000022BC + offset);
+				data = READU32(0x00000028 + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x00000028 + offset, data);
+				offset += 4;
+				offset = 0x00000000;
+				offset = READU32(0x0065DA44 + offset);
+				offset = READU32(0x000022BC + offset);
+				data = READU32(0x0000002C + offset);
+				offset = 0x10000000;
+				offset = READU32(0x0400F750 + offset);
+				offset = READU32(0x00000518 + offset);
+				offset = READU32(0x0000001C + offset);
+				WRITEU32(0x0000002C + offset, data);
+				offset += 4;
+			}
+		}
+	}
+
+	data = 0;
+	offset = 0;
+}
+
 /* Region Modifiers
 You can edit these by going to the top of this file and finding the EXACT name of the location you want, and then pasting it where you see WRITEU32(offset + 0xF7CC, REGION);
 This will still have the original name, because that will require more editing. Enable the code that you originally edited */
@@ -1292,7 +1744,53 @@ void	region_Phillippines(void)
 {
 	writeLocation(Phillippines);
 }
+
 void	flag_Japan(void)
 {
 	writeFlag(Japan);
+}
+
+void	flag_Haiti(void)
+{
+	writeFlag(Haiti1);
+}
+
+void	flag_Italy(void)
+{
+	writeFlag(Italy);
+}
+
+void	flag_SaudiArabia(void)
+{
+	writeFlag(SaudiArabia1);
+}
+
+void	flag_SouthAfrica(void)
+{
+	writeFlag(SouthAfrica);
+}
+
+void	flag_Russia(void)
+{
+	writeFlag(Russia);
+}
+
+void	watereverywhereRev0(void)
+{
+	if(READU8(0x147909D4) == 1)
+	{
+		offset = READU32(0x663954);
+		offset = READU32(offset + 0x58);
+		WRITEU32(offset + 0x420, 0x48000000);
+	}
+}
+
+void	watereverywhereRev1(void)
+{
+	if((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
+	{
+		offset = READU32(0x663954);
+		offset = READU32(offset + 0x58);
+		WRITEU32(offset + 0x420, 0x48000000);
+	}
 }

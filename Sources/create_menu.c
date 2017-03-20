@@ -90,6 +90,7 @@ char	*builder_name = "DarkFlare";
 	static const char * const moonjump_note = "Start + R = Jump";
 	static const char * const timer_note = "Your timer will be set to 4:59.9xx. In battles, you can hold up the room for as long as you want. In races, you will always lose.";
 	static const char * const starpower_note = "You will always be invincibile as if you had a star.";
+	static const char * const watereverywhere_note = "You will always be underwater and have a propeller on the back of your kart.";
 	
 
 void    my_menus(void)
@@ -126,6 +127,7 @@ void    my_menus(void)
 			new_entry_with_note("No Countdown", countdown_note, noCountdown);
 			new_entry_with_note("4:59.9xx Timer", timer_note, maxTimer);
             new_entry_with_note("Water Level Modifier (See Note)", water_note, waterlevelRev0);
+			new_entry_with_note("Water Everywhere", watereverywhere_note, watereverywhereRev0);
         exit_spoiler();
         new_spoiler("Menu & Unlock Codes");
             new_entry_with_note("VR Extender (See Note)", vrext_note, vrExtender);
@@ -166,6 +168,7 @@ void    my_menus(void)
 			new_entry_with_note("No Countdown", countdown_note, noCountdown);
 			new_entry_with_note("4:59.9xx Timer", timer_note, maxTimer);
             new_entry_with_note("Water Level Modifier (See Note)", water_note, waterlevelRev1);
+			new_entry_with_note("Water Everywhere", watereverywhere_note, watereverywhereRev1);
         exit_spoiler();
         new_spoiler("Menu & Unlock Codes");
             new_entry_with_note("VR Extender (See Note)", vrext_note, vrExtender);

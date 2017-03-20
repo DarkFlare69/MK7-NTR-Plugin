@@ -78,5 +78,7 @@ void	region_Cuba(void);
 void	region_Russia(void);
 void	region_Phillippines(void);
 void	flag_Japan(void);
+void	watereverywhereRev0(void);
+void	watereverywhereRev1(void);
 
 #endif
