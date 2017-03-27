@@ -1225,7 +1225,7 @@ void	maxTimer(void)
 	}
 }
 
-void stalkingRev0(void) // filthy stalking code converted by Anto's converter. I was too lazy to write the whole thing
+void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I was too lazy to write the whole thing
 {
 	u32 data;
 	u32 offset;
@@ -1672,9 +1672,6 @@ void stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 			}
 		}
 	}
-
-	data = 0;
-	offset = 0;
 }
 
 /* Region Modifiers

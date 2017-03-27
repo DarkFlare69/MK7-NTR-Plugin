@@ -66,6 +66,7 @@ void	moonjumpRev1(void);
 void	maxTimer(void);
 void	starpowerRev0(void);
 void	starpowerRev1(void);
+void	stalkingRev0(void);
 void	writeLocation(u32 location);
 void	writeFlag(u8 flag);
 void	region_France(void);
