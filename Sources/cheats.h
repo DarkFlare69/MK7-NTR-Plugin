@@ -78,7 +78,13 @@ void	region_SaudiArabia(void);
 void	region_Cuba(void);
 void	region_Russia(void);
 void	region_Phillippines(void);
+void	flag_SaudiArabia(void);
+void	flag_Haiti(void);
+void	flag_Italy(void);
+void	flag_SouthAfrica(void);
+void	flag_Russia(void);
 void	flag_Japan(void);
+void	flag_USA(void);
 void	watereverywhereRev0(void);
 void	watereverywhereRev1(void);
 

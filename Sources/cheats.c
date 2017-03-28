@@ -1772,6 +1772,11 @@ void	flag_Russia(void)
 	writeFlag(Russia);
 }
 
+void	flag_USA(void)
+{
+	writeFlag(UnitedStates1);
+}
+
 void	watereverywhereRev0(void)
 {
 	if(READU8(0x147909D4) == 1)

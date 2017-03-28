@@ -95,7 +95,7 @@ char	*builder_name = "DarkFlare";
 
 void    my_menus(void)
 {
-    new_spoiler("Rev0 Codes");
+    new_spoiler("Rev0 / Rev0 1.1 Codes");
         new_spoiler("Kart Codes");
             new_entry_with_note("Invincibility", inv_note, invincibilityRev0);
             new_entry_with_note("Black Kart", black_note, blackkartRev0);
@@ -135,8 +135,8 @@ void    my_menus(void)
 			new_entry_with_note("No Disconnect", nodc_note, nodcRev0);
             new_entry_with_note("Unlock Everything", unlock_note, unlockEverything);
         exit_spoiler();
-    exit_spoiler();
-    new_spoiler("Rev1 Codes");
+	exit_spoiler();
+	new_spoiler("Rev1 Codes");
         new_spoiler("Kart Codes");
             new_entry_with_note("Invincibility (Rev1)", inv_note, invincibilityRev1);
             new_entry_with_note("Black Kart", black_note, blackkartRev1);
@@ -176,7 +176,7 @@ void    my_menus(void)
 			new_entry_with_note("No Disconnect", nodc_note, nodcRev1);
 			new_entry_with_note("Unlock Everything", unlock_note, unlockEverything);
         exit_spoiler();
-    exit_spoiler();
+	exit_spoiler();
 	new_spoiler("Region Codes");
         new_spoiler("Globe Coordinates");
 			new_entry("Saudi Arabia", region_SaudiArabia);
@@ -190,7 +190,13 @@ void    my_menus(void)
 			new_entry("Philippines", region_Phillippines);
         exit_spoiler();
 		new_spoiler("Flag");
+			new_entry("Saudi Arabia", flag_SaudiArabia);
+			new_entry("United States of America", flag_USA);
 			new_entry("Japan", flag_Japan);
+			new_entry("Haiti", flag_Haiti);
+			new_entry("Italy", flag_Italy);
+			new_entry("South Africa", flag_SouthAfrica);
+			new_entry("Russia", flag_Russia);
 		exit_spoiler();
 	exit_spoiler();
 }
