@@ -87,5 +87,7 @@ void	flag_Japan(void);
 void	flag_USA(void);
 void	watereverywhereRev0(void);
 void	watereverywhereRev1(void);
+void	bulletControlRev0(void);
+void	bulletControlRev1(void);
 
 #endif

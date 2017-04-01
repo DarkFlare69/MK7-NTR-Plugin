@@ -1796,3 +1796,38 @@ void	watereverywhereRev1(void)
 		WRITEU32(offset + 0x420, 0x48000000);
 	}
 }
+
+void	bulletControlRev0(void)
+{
+	if (READU8(0x147909D4) == 1)
+	{
+		if (READU32(0x1400F750) != 0)
+		{
+			offset = READU32 (0x1400F750);
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU8(0xC32 + offset, 64);
+		}
+	}
+}
+
+void	bulletControlRev1(void)
+{
+	if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
+	{
+		if (READU32(0x1400EB70) > 0x15000000 && (READU32(0x1400EB70) < 0x18000000)) 
+		{
+			offset = READU32 (0x1400EB70);
+		}
+		if (READU32(0x1400F178) > 0x15000000 && (READU32(0x1400F178) < 0x18000000))
+		{
+			offset = READU32 (0x1400F178);
+		}
+		{
+			offset = READU32 (0x518 + offset);
+			offset = READU32 (0x1C + offset);
+			WRITEU8(0xC32 + offset, 64);
+		}
+	}
+}
+

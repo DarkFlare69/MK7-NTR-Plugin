@@ -75,7 +75,7 @@ char	*builder_name = "DarkFlare";
 	static const char * const stoppedblue_note = "Blue Shells will not move.";
 	static const char * const fastgr_note = "Green & Red Shells will move quickly.";
 	static const char * const stoppedgr_note = "Green & Red Shells will not move.";
-	static const char * const bullet_note = "X = Fast; A = Default; B = Stopped";
+	static const char * const bulletspeed_note = "X = Fast; A = Default; B = Stopped";
 	static const char * const bs_note = "D-Pad Left = Ride Blue Shell";
 	static const char * const water_note = "Start + D-Pad Right = Raise water height; Start + D-Pad Left = Lower water height";
 	static const char * const vrext_note = "Start = 999999vr; D-Pad Down = 0vr; D-Pad Up = 696969vr; D-Pad Right = 666666vr";
@@ -91,6 +91,7 @@ char	*builder_name = "DarkFlare";
 	static const char * const timer_note = "Your timer will be set to 4:59.9xx. In battles, you can hold up the room for as long as you want. In races, you will always lose.";
 	static const char * const starpower_note = "You will always be invincibile as if you had a star.";
 	static const char * const watereverywhere_note = "You will always be underwater and have a propeller on the back of your kart.";
+	static const char * const bulletcontrol_note = "You will be able to control the bullet as if it is a kart. Use bullet control with it";
 	
 
 void    my_menus(void)
@@ -120,7 +121,8 @@ void    my_menus(void)
             new_entry_with_note("Stopped Blue Shell", stoppedblue_note, stoppedBlue);
             new_entry_with_note("Fast Green & Red Shells", fastgr_note, fastGreen);
             new_entry_with_note("Stopped Green & Red Shells", stoppedgr_note, stoppedGreen);
-            new_entry_with_note("Bullet Speed Modifier (See Note)", bullet_note, bulletSpeed);
+            new_entry_with_note("Bullet Speed Modifier (See Note)", bulletspeed_note, bulletSpeed);
+			new_entry_with_note("Control Bullet Bill", bulletcontrol_note, bulletControlRev0);
             new_entry_with_note("Blue Shell Ride (See Note)", bs_note, blueshellrideRev0);
         exit_spoiler();
         new_spoiler("Course Codes");
@@ -161,7 +163,8 @@ void    my_menus(void)
             new_entry_with_note("Stopped Blue Shell", stoppedblue_note, stoppedBlue);
             new_entry_with_note("Fast Green & Red Shells", fastgr_note, fastGreen);
             new_entry_with_note("Stopped Green & Red Shells", stoppedgr_note, stoppedGreen);
-            new_entry_with_note("Bullet Speed Modifier (See Note)", bullet_note, bulletSpeed);
+            new_entry_with_note("Bullet Speed Modifier (See Note)", bulletspeed_note, bulletSpeed);
+			new_entry_with_note("Control Bullet Bill", bulletcontrol_note, bulletControlRev1);
             new_entry_with_note("Blue Shell Ride (Left)", bs_note, blueshellrideRev1);
         exit_spoiler();
         new_spoiler("Course Codes");
