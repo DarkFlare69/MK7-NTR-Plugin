@@ -366,7 +366,7 @@ void	fastBlue(void)
 
 void	stoppedBlue(void)
 {
-	WRITEU32(0x666094, 0x00000000);
+	WRITEU32(0x666094, 0);
 }
 
 void	fastGreen(void)
@@ -376,7 +376,7 @@ void	fastGreen(void)
 
 void	stoppedGreen(void)
 {
-	WRITEU32(0x66619C, 0x00000000);
+	WRITEU32(0x66619C, 0);
 }
 
 void	bulletSpeed(void)
@@ -407,7 +407,7 @@ void	itemwheelRev0(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x9);
+			WRITEU32(0xC8 + offset, 9);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_Y))
@@ -425,7 +425,7 @@ void	itemwheelRev0(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x6);
+			WRITEU32(0xC8 + offset, 6);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_SE))
@@ -452,7 +452,7 @@ void	itemwheelRev0(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x2);
+			WRITEU32(0xC8 + offset, 2);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DD))
@@ -461,7 +461,7 @@ void	itemwheelRev0(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x4);
+			WRITEU32(0xC8 + offset, 4);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DU))
@@ -470,7 +470,7 @@ void	itemwheelRev0(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x1);
+			WRITEU32(0xC8 + offset, 1);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 		}
@@ -489,7 +489,7 @@ void	itemwheelRev1(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x9);
+			WRITEU32(0xC8 + offset, 9);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_Y))
@@ -507,7 +507,7 @@ void	itemwheelRev1(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x6);
+			WRITEU32(0xC8 + offset, 6);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_SE))
@@ -534,7 +534,7 @@ void	itemwheelRev1(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x2);
+			WRITEU32(0xC8 + offset, 2);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DD))
@@ -543,7 +543,7 @@ void	itemwheelRev1(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x4);
+			WRITEU32(0xC8 + offset, 4);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DU))
@@ -552,7 +552,7 @@ void	itemwheelRev1(void)
 			offset = READU32(0x27AC + offset);
 			WRITEU32(0x3C + offset, 0xFFFFFFFF);
 			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0x1);
+			WRITEU32(0xC8 + offset, 1);
 			WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 		}
@@ -692,7 +692,7 @@ void	vrExtender(void)
 		if (READU32(0x663D04) != 0)
 		{
 			offset = READU32(0x663D04);
-			WRITEU32(offset - 0xE30, 0xF423F);
+			WRITEU32(offset - 0xE30, 999999);
 		}
 	}
 	if (is_pressed(BUTTON_DD))
@@ -700,7 +700,7 @@ void	vrExtender(void)
 		if (READU32(0x663D04) != 0)
 		{
 			offset = READU32(0x663D04);
-			WRITEU32(offset - 0xE30, 0x0);
+			WRITEU32(offset - 0xE30, 0);
 		}
 	}
 	if (is_pressed(BUTTON_DU))
@@ -708,7 +708,7 @@ void	vrExtender(void)
 		if (READU32(0x663D04) != 0)
 		{
 			offset = READU32(0x663D04);
-			WRITEU32(offset - 0xE30, 0xAA289);
+			WRITEU32(offset - 0xE30, 696969);
 		}
 	}
 	if (is_pressed(BUTTON_DR))
@@ -716,7 +716,15 @@ void	vrExtender(void)
 		if (READU32(0x663D04) != 0)
 		{
 			offset = READU32(0x663D04);
-			WRITEU32(offset - 0xE30, 0xA2C2A);
+			WRITEU32(offset - 0xE30, 666666);
+		}
+	}
+	if (is_pressed(BUTTON_DL))
+	{
+		if (READU32(0x663D04) != 0)
+		{
+			offset = READU32(0x663D04);
+			WRITEU32(offset - 0xE30, 777777);
 		}
 	}
 }
@@ -855,7 +863,7 @@ void	driveanywhereRev0(void)
 	}
 	if (is_pressed(BUTTON_SE))
 	{
-		WRITEU32(0x655240, 0x1);
+		WRITEU32(0x655240, 1);
 		WRITEU32(0x6656D8, 0xFFFF);
 	}
 	if (is_pressed(BUTTON_ST))
