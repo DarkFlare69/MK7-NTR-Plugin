@@ -92,6 +92,7 @@ char	*builder_name = "DarkFlare";
 	static const char * const starpower_note = "You will always be invincibile as if you had a star.";
 	static const char * const watereverywhere_note = "You will always be underwater and have a propeller on the back of your kart.";
 	static const char * const bulletcontrol_note = "You will be able to control the bullet as if it is a kart. Use bullet control with it";
+	static const char * const starmusic_note = "This code will disable star power music.";
 	
 
 void    my_menus(void)
@@ -124,6 +125,7 @@ void    my_menus(void)
             new_entry_with_note("Bullet Speed Modifier (See Note)", bulletspeed_note, bulletSpeed);
 			new_entry_with_note("Control Bullet Bill", bulletcontrol_note, bulletControlRev0);
             new_entry_with_note("Blue Shell Ride (See Note)", bs_note, blueshellrideRev0);
+			new_entry_with_note("Disable Star Music", starmusic_note, disableStarMusicRev0);
         exit_spoiler();
         new_spoiler("Course Codes");
 			new_entry_with_note("No Countdown", countdown_note, noCountdown);
@@ -166,6 +168,7 @@ void    my_menus(void)
             new_entry_with_note("Bullet Speed Modifier (See Note)", bulletspeed_note, bulletSpeed);
 			new_entry_with_note("Control Bullet Bill", bulletcontrol_note, bulletControlRev1);
             new_entry_with_note("Blue Shell Ride (Left)", bs_note, blueshellrideRev1);
+			new_entry_with_note("Disable Star Music", starmusic_note, disableStarMusicRev1);
         exit_spoiler();
         new_spoiler("Course Codes");
 			new_entry_with_note("No Countdown", countdown_note, noCountdown);

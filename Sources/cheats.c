@@ -1839,3 +1839,29 @@ void	bulletControlRev1(void)
 		}
 	}
 }
+
+void	disableStarMusicRev0(void)
+{
+	if (READU8(0x147909D4) == 1)
+	{
+		offset = READU32(0x140005AC);
+		offset = READU32(0x650 + offset);
+		if (READU8(0x1F7 + offset) == 1)
+		{
+			WRITEU8(0x1F7 + offset, 0);
+		}
+	}
+}
+
+void	disableStarMusicRev1(void)
+{
+	if (READU8(0x1478FDF4) == 1)
+	{
+		offset = READU32(0x140005AC);
+		offset = READU32(0x628 + offset);
+		if (READU8(0x1F7 + offset) == 1)
+		{
+			WRITEU8(0x1F7 + offset, 0);
+		}
+	}
+}

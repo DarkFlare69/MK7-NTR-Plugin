@@ -89,5 +89,7 @@ void	watereverywhereRev0(void);
 void	watereverywhereRev1(void);
 void	bulletControlRev0(void);
 void	bulletControlRev1(void);
+void	disableStarMusicRev0(void);
+void	disableStarMusicRev1(void);
 
 #endif
