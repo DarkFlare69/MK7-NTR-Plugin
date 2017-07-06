@@ -16,12 +16,12 @@ u32 Mongolia = 0x3EC91C81;
 u32 Hawaii = 0xF9E67EFF;
 u32 RussiaEnmelen = 0x7C062DA4;
 u32 wtf = 0x911B8EF2;
-u32 GabonSouthAmerica = 0x0BBEFB10;
+u32 GabonSouthAmerica = 0xBBEFB10;
 u32 QuebecCanada = 0xC50C23DF;
 u32 Malaysia = 0xD6277448;
 u32 NunavutCanada = 0xB1C93138;
 u32 SenegalSouthAmerica = 0xF56208BF;
-u32 SouthAmericaSouthAmerica = 0x0EC8EBF5;
+u32 SouthAmericaSouthAmerica = 0xEC8EBF5;
 u32 SouthEasternAntartcia = 0x7D57B7AE;
 u32 SouthernSouthAntartcia = 0xD678B06B;
 u32 EasternGreenland = 0xE7622D35;
@@ -57,7 +57,7 @@ u32 LowerLowerAntarctica = 0x40DBB2C7;
 u32 NewFoundLandCanada = 0xBD1D99CE;
 u32 MoreAntarctica = 0xBA95C686;
 u32 MoreAntartica2 = 0x8518C558;
-u32 France = 0x02441D3F;
+u32 France = 0x2441D3F;
 u32 MoreAntarctica3 = 0x3449B31C;
 u32 MoreAntarctica4 = 0xA365B8A5;
 u32 MoreAntarctica5 = 0x68E8C717;
@@ -404,75 +404,75 @@ void	itemwheelRev0(void)
 		{
 			if (is_pressed(BUTTON_X))
 			{
-			offset = READU32(0x17782494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 9);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 9);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_Y))
 			{
-			offset = READU32(0x17782494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0xD);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 0xD);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_ST))
 			{
-			offset = READU32(0x17782494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 6);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 6);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_SE))
 			{
-			offset = READU32(0x17782494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0xA);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 0xA);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DL))
 			{
-			offset = READU32(0x17782494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0xE);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 0xE);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DR))
 			{
-			offset = READU32(0x17782494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 2);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 2);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DD))
 			{
-			offset = READU32(0x17782494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 4);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 4);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DU))
 			{
-			offset = READU32(0x17782494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 1);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 1);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 		}
 	}
@@ -486,75 +486,75 @@ void	itemwheelRev1(void)
 		{
 			if (is_pressed(BUTTON_X))
 			{
-			offset = READU32(0x177BE494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 9);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 9);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_Y))
 			{
-			offset = READU32(0x177BE494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0xD);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 0xD);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_ST))
 			{
-			offset = READU32(0x177BE494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 6);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 6);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_SE))
 			{
-			offset = READU32(0x177BE494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0xA);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 0xA);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DL))
 			{
-			offset = READU32(0x177BE494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 0xE);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 0xE);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DR))
 			{
-			offset = READU32(0x177BE494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 2);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 2);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DD))
 			{
-			offset = READU32(0x177BE494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 4);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 4);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 			if (is_pressed(BUTTON_DU))
 			{
-			offset = READU32(0x177BE494);
-			offset = READU32(0x27AC + offset);
-			WRITEU32(0x3C + offset, 0xFFFFFFFF);
-			WRITEU32(0xA8 + offset, 0x203);
-			WRITEU32(0xC8 + offset, 1);
-			WRITEU32(0xD8 + offset, 0x3F800000);
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 1);
+				WRITEU32(0xD8 + offset, 0x3F800000);
 			}
 		}
 	}
@@ -1152,19 +1152,12 @@ void	nodcRev1(void)
 
 void	disablefpRev0(void)
 {
-	WRITEU8(0x147909D5, 0);
+	WRITEU32(0x444B28, 0xE1A00000);
 }
 
 void	disablefpRev1(void)
 {
-	if (READU8(0x1478FDF4) == 1)
-	{
-		WRITEU8(0x1478FDF5, 0);
-	}
-	if (READU8(0x14790414) == 1)
-	{
-		WRITEU8(0x14790415, 0);
-	}
+	WRITEU32(0x444A60, 0xE1A00000);
 }
 
 void	dropMushrooms(void)
@@ -1242,92 +1235,92 @@ void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 	data = 0;
 	offset = 0;
 
-	WRITEU32(0x00444AB8 + offset, 0xE1A00000);
-	WRITEU32(0x0030D5C8 + offset, 0xE1A00000);
-	if (is_pressed(0x00000500))
+	WRITEU32(0x444AB8 + offset, 0xE1A00000);
+	WRITEU32(0x30D5C8 + offset, 0xE1A00000);
+	if (is_pressed(0x500))
 	{
 		offset = 0x10000000;
-		WRITEU32(0x04000007 + offset, 0x00000000);
-		WRITEU32(0x04137904 + offset, 0x00000000);
+		WRITEU32(0x4000007 + offset, 0);
+		WRITEU32(0x4137904 + offset, 0);
 	}
 
 	data = 0;
 	offset = 0;
-	if (READU32(0x0065C528 + offset) != 0x00000000)
+	if (READU32(0x65C528 + offset) != 0)
 	{
-		offset = READU32(0x0065C528 + offset);
-		if (READU32(0x000000C8 + offset) > 0x16000000)
+		offset = READU32(0x65C528 + offset);
+		if (READU32(0xC8 + offset) > 0x16000000)
 		{
-			if (READU32(0x000000C8 + offset) < 0x18000000)
+			if (READU32(0xC8 + offset) < 0x18000000)
 			{
-				offset = READU32(0x000000C8 + offset);
-				WRITEU32(0x00000034 + offset, 0x00000000);
-				WRITEU32(0x00000038 + offset, 0x00000000);
+				offset = READU32(0xC8 + offset);
+				WRITEU32(0x34 + offset, 0);
+				WRITEU32(0x38 + offset, 0);
 			}
 		}
 	}
 
 	data = 0;
 	offset = 0;
-	if (is_pressed(0x00000082))
+	if (is_pressed(0x82))
 	{
 		data = READU32(0x14000007 + offset);
-		WRITEU32(0x00654000 + offset, data);
+		WRITEU32(0x654000 + offset, data);
 		offset += 4;
 	}
 
 	data = 0;
 	offset = 0;
 	data = READU32(0x14137904 + offset);
-	WRITEU32(0x00654004 + offset, data);
+	WRITEU32(0x654004 + offset, data);
 	offset += 4;
 
 	data = 0;
 	offset = 0;
-	if (is_pressed(0x00000042))
+	if (is_pressed(0x42))
 	{
-		data = READU32(0x00654000 + offset);
+		data = READU32(0x654000 + offset);
 		WRITEU32(0x14000007 + offset, data);
 		offset += 4;
 	}
 
 	data = 0;
 	offset = 0;
-	data = READU32(0x00654004 + offset);
+	data = READU32(0x654004 + offset);
 	WRITEU32(0x14137904 + offset, data);
 	offset += 4;
 
 	data = 0;
 	offset = 0;
 	offset = 0x10000000;
-	if (READU32(0x04137904 + offset) > 0x00000050)
+	if (READU32(0x4137904 + offset) > 0x50)
 	{
-		WRITEU32(0x04000007 + offset, 0x00000001);
-		if (READU32(0x04137904 + offset) > 0x000000A0)
+		WRITEU32(0x4000007 + offset, 0x1);
+		if (READU32(0x4137904 + offset) > 0xA0)
 		{
-			WRITEU32(0x04000007 + offset, 0x00000002);
-			if (READU32(0x04137904 + offset) > 0x000000F0)
+			WRITEU32(0x4000007 + offset, 0x2);
+			if (READU32(0x4137904 + offset) > 0xF0)
 			{
-				WRITEU32(0x04000007 + offset, 0x00000003);
-				if (READU32(0x04137904 + offset) > 0x00000140)
+				WRITEU32(0x4000007 + offset, 0x3);
+				if (READU32(0x4137904 + offset) > 0x140)
 				{
-					WRITEU32(0x04000007 + offset, 0x00000004);
-					if (READU32(0x04137904 + offset) > 0x00000190)
+					WRITEU32(0x4000007 + offset, 0x4);
+					if (READU32(0x4137904 + offset) > 0x190)
 					{
-						WRITEU32(0x04000007 + offset, 0x00000005);
-						if (READU32(0x04137904 + offset) > 0x000001E0)
+						WRITEU32(0x4000007 + offset, 0x5);
+						if (READU32(0x4137904 + offset) > 0x1E0)
 						{
-							WRITEU32(0x04000007 + offset, 0x00000006);
-							if (READU32(0x04137904 + offset) > 0x00000230)
+							WRITEU32(0x4000007 + offset, 0x6);
+							if (READU32(0x4137904 + offset) > 0x230)
 							{
-								WRITEU32(0x04000007 + offset, 0x00000007);
-								if (READU32(0x04137904 + offset) > 0x00000280)
+								WRITEU32(0x4000007 + offset, 0x7);
+								if (READU32(0x4137904 + offset) > 0x280)
 								{
-									WRITEU32(0x04000007 + offset, 0x00000008);
-									if (READU32(0x04137904 + offset) > 0x000002C0)
+									WRITEU32(0x4000007 + offset, 0x8);
+									if (READU32(0x4137904 + offset) > 0x2C0)
 									{
-										WRITEU32(0x04137904 + offset, 0x00000000);
-										WRITEU32(0x04000007 + offset, 0x00000000);
+										WRITEU32(0x4137904 + offset, 0);
+										WRITEU32(0x4000007 + offset, 0);
 									}
 								}
 							}
@@ -1341,41 +1334,41 @@ void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 	data = 0;
 	offset = 0;
 	offset = 0x10000000;
-	if (READU16(0x047909D4 + offset) == 0x00000001)
+	if (READU16(0x47909D4 + offset) == 0x1)
 	{
-		if (READU16(0x054733E0 + offset) > 0x00000007)
+		if (READU16(0x54733E0 + offset) > 0x7)
 		{
-			if (READU16(0x04000007 + offset) == 0x00000001)
+			if (READU16(0x4000007 + offset) == 0x1)
 			{
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000020E0 + offset);
-				data = READU32(0x00000024 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x20E0 + offset);
+				data = READU32(0x24 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000024 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x24 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000020E0 + offset);
-				data = READU32(0x00000028 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x20E0 + offset);
+				data = READU32(0x28 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000028 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x28 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000020E0 + offset);
-				data = READU32(0x0000002C + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x20E0 + offset);
+				data = READU32(0x2C + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x0000002C + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x2C + offset, data);
 				offset += 4;
 			}
 		}
@@ -1384,41 +1377,41 @@ void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 	data = 0;
 	offset = 0;
 	offset = 0x10000000;
-	if (READU16(0x047909D4 + offset) == 0x00000001)
+	if (READU16(0x47909D4 + offset) == 0x1)
 	{
-		if (READU16(0x054733E0 + offset) > 0x00000006)
+		if (READU16(0x54733E0 + offset) > 0x6)
 		{
-			if (READU16(0x04000007 + offset) == 0x00000002)
+			if (READU16(0x4000007 + offset) == 0x2)
 			{
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002124 + offset);
-				data = READU32(0x00000024 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2124 + offset);
+				data = READU32(0x24 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000024 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x24 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002124 + offset);
-				data = READU32(0x00000028 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2124 + offset);
+				data = READU32(0x28 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000028 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x28 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002124 + offset);
-				data = READU32(0x0000002C + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2124 + offset);
+				data = READU32(0x2C + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x0000002C + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x2C + offset, data);
 				offset += 4;
 			}
 		}
@@ -1427,41 +1420,41 @@ void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 	data = 0;
 	offset = 0;
 	offset = 0x10000000;
-	if (READU16(0x047909D4 + offset) == 0x00000001)
+	if (READU16(0x47909D4 + offset) == 0x1)
 	{
-		if (READU16(0x054733E0 + offset) > 0x00000005)
+		if (READU16(0x54733E0 + offset) > 0x5)
 		{
-			if (READU16(0x04000007 + offset) == 0x00000003)
+			if (READU16(0x4000007 + offset) == 0x3)
 			{
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002168 + offset);
-				data = READU32(0x00000024 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2168 + offset);
+				data = READU32(0x24 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000024 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x24 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002168 + offset);
-				data = READU32(0x00000028 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2168 + offset);
+				data = READU32(0x28 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000028 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x28 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002168 + offset);
-				data = READU32(0x0000002C + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2168 + offset);
+				data = READU32(0x2C + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x0000002C + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x2C + offset, data);
 				offset += 4;
 			}
 		}
@@ -1470,41 +1463,41 @@ void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 	data = 0;
 	offset = 0;
 	offset = 0x10000000;
-	if (READU16(0x047909D4 + offset) == 0x00000001)
+	if (READU16(0x47909D4 + offset) == 0x1)
 	{
-		if (READU16(0x054733E0 + offset) > 0x00000004)
+		if (READU16(0x54733E0 + offset) > 0x4)
 		{
-			if (READU16(0x04000007 + offset) == 0x00000004)
+			if (READU16(0x4000007 + offset) == 0x4)
 			{
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000021AC + offset);
-				data = READU32(0x00000024 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x21AC + offset);
+				data = READU32(0x24 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000024 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x24 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000021AC + offset);
-				data = READU32(0x00000028 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x21AC + offset);
+				data = READU32(0x28 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000028 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x28 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000021AC + offset);
-				data = READU32(0x0000002C + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x21AC + offset);
+				data = READU32(0x2C + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x0000002C + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x2C + offset, data);
 				offset += 4;
 			}
 		}
@@ -1513,41 +1506,41 @@ void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 	data = 0;
 	offset = 0;
 	offset = 0x10000000;
-	if (READU16(0x047909D4 + offset) == 0x00000001)
+	if (READU16(0x47909D4 + offset) == 0x1)
 	{
-		if (READU16(0x054733E0 + offset) > 0x00000003)
+		if (READU16(0x54733E0 + offset) > 0x3)
 		{
-			if (READU16(0x04000007 + offset) == 0x00000005)
+			if (READU16(0x4000007 + offset) == 0x5)
 			{
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000021F0 + offset);
-				data = READU32(0x00000024 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x21F0 + offset);
+				data = READU32(0x24 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000024 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x24 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000021F0 + offset);
-				data = READU32(0x00000028 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x21F0 + offset);
+				data = READU32(0x28 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000028 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x28 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000021F0 + offset);
-				data = READU32(0x0000002C + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x21F0 + offset);
+				data = READU32(0x2C + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x0000002C + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x2C + offset, data);
 				offset += 4;
 			}
 		}
@@ -1556,41 +1549,41 @@ void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 	data = 0;
 	offset = 0;
 	offset = 0x10000000;
-	if (READU16(0x054733E0 + offset) > 0x00000002)
+	if (READU16(0x54733E0 + offset) > 0x2)
 	{
-		if (READU16(0x047909D4 + offset) == 0x00000001)
+		if (READU16(0x47909D4 + offset) == 0x1)
 		{
-			if (READU16(0x04000007 + offset) == 0x00000006)
+			if (READU16(0x4000007 + offset) == 0x6)
 			{
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002234 + offset);
-				data = READU32(0x00000024 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2234 + offset);
+				data = READU32(0x24 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000024 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x24 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002234 + offset);
-				data = READU32(0x00000028 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2234 + offset);
+				data = READU32(0x28 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000028 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x28 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002234 + offset);
-				data = READU32(0x0000002C + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2234 + offset);
+				data = READU32(0x2C + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x0000002C + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x2C + offset, data);
 				offset += 4;
 			}
 		}
@@ -1599,41 +1592,41 @@ void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 	data = 0;
 	offset = 0;
 	offset = 0x10000000;
-	if (READU16(0x054733E0 + offset) > 0x00000001)
+	if (READU16(0x54733E0 + offset) > 0x1)
 	{
-		if (READU16(0x047909D4 + offset) == 0x00000001)
+		if (READU16(0x47909D4 + offset) == 0x1)
 		{
-			if (READU16(0x04000007 + offset) == 0x00000007)
+			if (READU16(0x4000007 + offset) == 0x7)
 			{
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002278 + offset);
-				data = READU32(0x00000024 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2278 + offset);
+				data = READU32(0x24 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000024 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x24 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002278 + offset);
-				data = READU32(0x00000028 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2278 + offset);
+				data = READU32(0x28 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000028 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x28 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x00002278 + offset);
-				data = READU32(0x0000002C + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x2278 + offset);
+				data = READU32(0x2C + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x0000002C + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x2C + offset, data);
 				offset += 4;
 			}
 		}
@@ -1642,41 +1635,41 @@ void	stalkingRev0(void) // filthy stalking code converted by Anto's converter. I
 	data = 0;
 	offset = 0;
 	offset = 0x10000000;
-	if (READU16(0x054733E0 + offset) > 0x00000000)
+	if (READU16(0x54733E0 + offset) > 0)
 	{
-		if (READU16(0x047909D4 + offset) == 0x00000001)
+		if (READU16(0x47909D4 + offset) == 0x1)
 		{
-			if (READU16(0x04000007 + offset) == 0x00000008)
+			if (READU16(0x4000007 + offset) == 0x8)
 			{
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000022BC + offset);
-				data = READU32(0x00000024 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x22BC + offset);
+				data = READU32(0x24 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000024 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x24 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000022BC + offset);
-				data = READU32(0x00000028 + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x22BC + offset);
+				data = READU32(0x28 + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x00000028 + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x28 + offset, data);
 				offset += 4;
-				offset = 0x00000000;
-				offset = READU32(0x0065DA44 + offset);
-				offset = READU32(0x000022BC + offset);
-				data = READU32(0x0000002C + offset);
+				offset = 0;
+				offset = READU32(0x65DA44 + offset);
+				offset = READU32(0x22BC + offset);
+				data = READU32(0x2C + offset);
 				offset = 0x10000000;
-				offset = READU32(0x0400F750 + offset);
-				offset = READU32(0x00000518 + offset);
-				offset = READU32(0x0000001C + offset);
-				WRITEU32(0x0000002C + offset, data);
+				offset = READU32(0x400F750 + offset);
+				offset = READU32(0x518 + offset);
+				offset = READU32(0x1C + offset);
+				WRITEU32(0x2C + offset, data);
 				offset += 4;
 			}
 		}
@@ -1862,6 +1855,74 @@ void	disableStarMusicRev1(void)
 		if (READU8(0x1F7 + offset) == 1)
 		{
 			WRITEU8(0x1F7 + offset, 0);
+		}
+	}
+}
+
+void	mushroomCodeRev0(void)
+{
+	if (is_pressed(DR))
+	{
+		if (READU8(0x147909D4) == 1)
+		{
+			if (READU32(0x17782494) != 0)
+			{
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 3);
+				WRITEU32(0xD8 + offset, 0x3F800000);
+			}
+		}
+	}
+	if (is_pressed(DL))
+	{
+		if (READU8(0x147909D4) == 1)
+		{
+			if (READU32(0x17782494) != 0)
+			{
+				offset = READU32(0x17782494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 1);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 3);
+				WRITEU32(0xD8 + offset, 0x3F800000);
+			}
+		}
+	}
+}
+
+void	mushroomCodeRev1(void)
+{
+	if (is_pressed(DR))
+	{
+		if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
+		{
+			if (READU32(0x177BE494) != 0)
+			{
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 0xFFFFFFFF);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 3);
+				WRITEU32(0xD8 + offset, 0x3F800000);
+			}
+		}
+	}
+	if (is_pressed(DL))
+	{
+		if ((READU8(0x1478FDF4) == 1) || (READU8(0x14790414) == 1))
+		{
+			if (READU32(0x177BE494) != 0)
+			{
+				offset = READU32(0x177BE494);
+				offset = READU32(0x27AC + offset);
+				WRITEU32(0x3C + offset, 1);
+				WRITEU32(0xA8 + offset, 0x203);
+				WRITEU32(0xC8 + offset, 3);
+				WRITEU32(0xD8 + offset, 0x3F800000);
+			}
 		}
 	}
 }

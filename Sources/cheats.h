@@ -91,5 +91,7 @@ void	bulletControlRev0(void);
 void	bulletControlRev1(void);
 void	disableStarMusicRev0(void);
 void	disableStarMusicRev1(void);
+void	mushroomCodeRev0(void);
+void	mushroomCodeRev1(void);
 
 #endif

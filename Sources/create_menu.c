@@ -93,6 +93,7 @@ char	*builder_name = "DarkFlare";
 	static const char * const watereverywhere_note = "You will always be underwater and have a propeller on the back of your kart.";
 	static const char * const bulletcontrol_note = "You will be able to control the bullet as if it is a kart. Use bullet control with it";
 	static const char * const starmusic_note = "This code will disable star power music.";
+	static const char * const mushroomcode_note = "D-Pad Left = Infinite Mushrooms; D-Pad Right = Disable code";
 	
 
 void    my_menus(void)
@@ -117,6 +118,7 @@ void    my_menus(void)
         new_spoiler("Item Codes");
             new_entry_with_note("Item Wheel (See Note)", itemwheel_note, itemwheelRev0);
 			new_entry_with_note("Star Invincibility", starpower_note, starpowerRev0);
+			new_entry_with_note("Infinite Mushrooms (See Note)", mushroomcode_note, mushroomCodeRev0);
 			new_entry_with_note("Drop Mushrooms (See Note)", dropshroom_note, dropMushrooms);
             new_entry_with_note("Fast Blue Shell", fastblue_note, fastBlue);
             new_entry_with_note("Stopped Blue Shell", stoppedblue_note, stoppedBlue);
@@ -160,6 +162,7 @@ void    my_menus(void)
         new_spoiler("Item Codes");
             new_entry_with_note("Item Wheel (See Note)", itemwheel_note, itemwheelRev1);
 			new_entry_with_note("Star Invincibility", starpower_note, starpowerRev1);
+			new_entry_with_note("Infinite Mushrooms (See Note)", mushroomcode_note, mushroomCodeRev1);
 			new_entry_with_note("Drop Mushrooms (See Note)", dropshroom_note, dropMushrooms);
             new_entry_with_note("Fast Blue Shell", fastblue_note, fastBlue);
             new_entry_with_note("Stopped Blue Shell", stoppedblue_note, stoppedBlue);
