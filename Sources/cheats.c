@@ -1,4 +1,5 @@
 #include "cheats.h"
+#include <stdbool.h>
 #include "hid.h"
 
 u32 data = 0;
@@ -1838,4 +1839,3 @@ void	bulletControlRev1(void)
 		}
 	}
 }
-
